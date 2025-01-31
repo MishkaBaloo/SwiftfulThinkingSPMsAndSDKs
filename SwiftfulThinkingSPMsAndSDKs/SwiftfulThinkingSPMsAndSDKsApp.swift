@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftfulThinkingSPMsAndSDKsApp: App {
     var body: some Scene {
         WindowGroup {
-            SDWebImageView()
+            KingfisherImageLoader(url: "https://picsum.photos/id/660/200/300")
         }
     }
 }
