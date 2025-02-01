@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3769982D4E88E800735790 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE3769972D4E88E800735790 /* KeychainSwift */; };
 		CE77352A2D4D6F4E00801637 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CE7735292D4D6F4E00801637 /* SDWebImageSwiftUI */; };
 		CEB4E3C52D4D8B8D000A45F9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CEB4E3C42D4D8B8D000A45F9 /* Kingfisher */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3769982D4E88E800735790 /* KeychainSwift in Frameworks */,
 				CEB4E3C52D4D8B8D000A45F9 /* Kingfisher in Frameworks */,
 				CE77352A2D4D6F4E00801637 /* SDWebImageSwiftUI in Frameworks */,
 			);
@@ -121,6 +123,7 @@
 			packageProductDependencies = (
 				CE7735292D4D6F4E00801637 /* SDWebImageSwiftUI */,
 				CEB4E3C42D4D8B8D000A45F9 /* Kingfisher */,
+				CE3769972D4E88E800735790 /* KeychainSwift */,
 			);
 			productName = SwiftfulThinkingSPMsAndSDKs;
 			productReference = CE7734FB2D4D6C6A00801637 /* SwiftfulThinkingSPMsAndSDKs.app */;
@@ -207,6 +210,7 @@
 			packageReferences = (
 				CE7735282D4D6F4E00801637 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				CEB4E3C32D4D8B8D000A45F9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CE3769962D4E88E800735790 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CE7734FC2D4D6C6A00801637 /* Products */;
@@ -573,6 +577,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE3769962D4E88E800735790 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
 		CE7735282D4D6F4E00801637 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -592,6 +604,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE3769972D4E88E800735790 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE3769962D4E88E800735790 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
 		CE7735292D4D6F4E00801637 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CE7735282D4D6F4E00801637 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
