@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1017262D5154B300F5539A /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = CE1017252D5154B300F5539A /* SwiftfulRouting */; };
 		CE3769982D4E88E800735790 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE3769972D4E88E800735790 /* KeychainSwift */; };
 		CE3769BB2D4EA11100735790 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = CE3769BA2D4EA11100735790 /* SwiftfulUI */; };
 		CE77352A2D4D6F4E00801637 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CE7735292D4D6F4E00801637 /* SDWebImageSwiftUI */; };
@@ -63,6 +64,7 @@
 				CE3769982D4E88E800735790 /* KeychainSwift in Frameworks */,
 				CEB4E3C52D4D8B8D000A45F9 /* Kingfisher in Frameworks */,
 				CE77352A2D4D6F4E00801637 /* SDWebImageSwiftUI in Frameworks */,
+				CE1017262D5154B300F5539A /* SwiftfulRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +129,7 @@
 				CEB4E3C42D4D8B8D000A45F9 /* Kingfisher */,
 				CE3769972D4E88E800735790 /* KeychainSwift */,
 				CE3769BA2D4EA11100735790 /* SwiftfulUI */,
+				CE1017252D5154B300F5539A /* SwiftfulRouting */,
 			);
 			productName = SwiftfulThinkingSPMsAndSDKs;
 			productReference = CE7734FB2D4D6C6A00801637 /* SwiftfulThinkingSPMsAndSDKs.app */;
@@ -215,6 +218,7 @@
 				CEB4E3C32D4D8B8D000A45F9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				CE3769962D4E88E800735790 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				CE3769B92D4EA11100735790 /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+				CE1017242D5154B300F5539A /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CE7734FC2D4D6C6A00801637 /* Products */;
@@ -581,6 +585,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE1017242D5154B300F5539A /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.6;
+			};
+		};
 		CE3769962D4E88E800735790 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
@@ -616,6 +628,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE1017252D5154B300F5539A /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE1017242D5154B300F5539A /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
 		CE3769972D4E88E800735790 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CE3769962D4E88E800735790 /* XCRemoteSwiftPackageReference "keychain-swift" */;
